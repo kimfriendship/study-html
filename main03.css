@@ -1,0 +1,70 @@
+
+div {
+    display: flex;
+}
+
+div a {
+    
+    font-weight: bold;
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    margin-left: 20px;
+    padding: 0 20px;
+
+}
+
+ul {
+
+}
+
+ul li {
+
+}
+
+ul li a {
+    
+}
+
+a:hover {
+    background: orange;
+}
+
+h2 {
+    padding-top: 1000px;
+}
+
+b {
+    font-weight: normal;
+    line-height: 30px;
+}
+
+em {
+    font-style: normal;
+    font-weight: bold;
+    color: brown;
+}
+
+.abc {
+    text-decoration: underline;
+    color: darkgreen;
+}
+
+code {
+    font-weight: bold;
+    color: orange;
+    background: lightgray;
+    padding: 3px;
+    border: 1px solid orange;
+    
+}
+
+kbd {
+    padding: 0 3px;
+    border-radius: 3px;
+    border: 2px solid orange;
+}
