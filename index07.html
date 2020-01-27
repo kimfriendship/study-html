@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Elements</title>
+    <link rel="stylesheet" href="./main07.css">
+</head>
+
+<body>
+    <table>
+        <caption>수직 테이블</caption>
+        <colgroup>
+            <col>
+            <col style="background-color: lightblue;" span="2">
+        </colgroup>
+        <tr>
+            <th></th>
+            <th abbr="Type" scope="col" headers="v-data">타입</th>
+            <th abbr="Value" scope="col" headers="v-data">값</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <td>알파벳</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>숫자</td>
+            <td>1</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>수평 테이블</caption>
+        <tr>
+            <th style="background-color: lightpink;" rowspan="2" id="h-data">데이터</th>
+            <th abbr="Type" scope="row" headers="h-data" id="h-type">타입</th>
+            <td headers="h-type">알파벳</td>
+            <td headers="h-type">숫자</td>
+        </tr>
+        <th abbr="Type" scope="row" headers="h-data" id="h-value">값</th>
+        <td headers="h-value">A</td>
+        <td headers="h-value">7</td>
+    </table>
+
+    <table>
+        <caption>Fruits</caption>
+        <colgroup>
+            <col span="2" style="background-color: lightsalmon;">
+            <col style="background-color: peachpuff;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>F123A</td>
+                <td>Apple</td>
+                <td>$22</td>
+            </tr>
+            <tr>
+                <td>F098B</td>
+                <td>Banana</td>
+                <td>$19</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>

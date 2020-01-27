@@ -1,0 +1,24 @@
+body {
+    display: flex;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 30px;
+    text-align: center;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 20px;
+    }
+
+th {
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+td {
+    border: 2px solid gray;
+    padding: 10px;
+}
