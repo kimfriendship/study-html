@@ -1,0 +1,16 @@
+.cow {
+    display: flex;
+}
+
+.cow p {
+    margin: 20px;
+    line-height: 50px;
+}
+
+.cow audio {
+    margin: 20px;
+}
+
+figure {
+    margin: 0;
+}
