@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <form action="/login" id="log-in" method="POST" autocomplete="off" novalidate target="_blank">
+        <div>
+        <input type="image" 
+    src="https://www.popularitas.com/wp-content/uploads/2018/04/user-hero-blue.png" 
+    alt="Profile" 
+    width="50">
+        <input class="box" type="email" name="id">
+        <input class="box" type="password" name="pw" maxlength="10">
+        <button type="reset">초기화</button>
+        </div>
+            <div class="fruits">
+                <select name="fruits">
+                    <optgroup label="내가 좋아하는 과일">
+                        <option>Apple</option>
+                        <option>Banana</option>
+                        <option>Mango</option>
+                    </optgroup>
+                    <optgroup label="내가 싫어하는 과일">
+                        <option>Orange</option>
+                        <option>Grapes</option>
+                    </optgroup>
+                </select>
+            
+                <input type="text" list="fruits">
+            
+                <datalist id="fruits">
+                    <option>Apple</option>
+                    <option>Orange</option>
+                    <option>Banana</option>
+                    <option>Mango</option>
+                    <option>Pineapple</option>
+                </datalist>
+            <input type="file" multiple>
+            </div>
+    </form>
+        <label>
+            Nickname<input type="text" form=log-in value="Hello">
+        </label>
+    <input type="number" max="10", min="0" step="1" placeholder="Age"><br>
+    <textarea name="" id="" cols="70" rows="10" placeholder="Todo list"></textarea><br>
+
+    <!-- 라벨 가능 요소를 참조 
+    <input type="checkbox" id="user-agreement"/>
+    <label for="user-agreement">동의하십니까?</label> -->
+
+    <!-- 라벨 가능 요소를 포함 -->
+    <label><input type="checkbox"/>동의하십니까?</label>
+    
+    <progress value="0" max="100"></progress>
+    <script>
+        const progress = document.querySelector('progress')
+        const interval = setInterval(function () {
+            progress.value += 10;
+            if (progress.value >= 100) clearInterval(interval);
+        }, 1000)
+    </script>
+
+    <button onclick="doit()">클릭하세요</button>
+    <script>
+        function doit() {
+                alert('클릭했습니다');
+        }
+    </script>
+
+    <form>
+        <fieldset>
+            <legend>Coffee Size</legend>
+            <label>
+                <input type="radio" name="size" value="tall" />
+                Tall
+            </label>
+            <label>
+                <input type="radio" name="size" value="grande" />
+                Grande
+            </label>
+            <label>
+                <input type="radio" name="size" value="venti" />
+                Venti
+            </label>
+            
+        </fieldset>
+    </form>
+
+    
+    
+
+</body>
+</html>
