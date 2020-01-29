@@ -1,0 +1,58 @@
+* {
+    font-size: 20px;
+}
+
+/*.disabled {
+    opacity: 0.3;
+}*/
+
+[disabled] {
+    opacity: 0.3;
+    color: red;
+}
+
+[type=password] {
+    color: white;
+    background-color: darkcyan;
+}
+
+[class^="btn-"] {
+    font-weigth: bold;
+    border-radius: 30px;
+}
+
+[class$="normal"] {
+    color: gray;
+}
+
+.fruits :first-child {
+    color: tomato;
+}
+
+.fruits li:not(.red) {
+    color: green;
+}
+
+.fruits p:nth-of-type(1) {
+    color: blue;
+}
+
+.fruits li:nth-of-type(2) {
+    color: purple;
+}
+
+.fruits :nth-child(5) {
+    color: pink;
+}
+
+.numbers li::before {
+    content: "숫자";
+    font-weight: bold;
+    color: lightgray;
+    margin-right: 10px;
+}
+
+.alphabet li::after {
+    content: "def"url("https://heropy.blog/css/images/vendor_icons/html5.png");
+    color: yellowgreen;
+}
