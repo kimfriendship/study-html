@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style/style.css" />
+  <link rel="stylesheet" href="./rwd-small.css" media="screen and (max-width: 999px)" />
+  <link rel="stylesheet" href="./rwd-large.css" media="screen and (min-width: 1000px)" />
+</head>
+
+<body>
+  <div class="container">
+    <header class="appHeader">
+      <h1 class="logo">
+        <a href="#">
+          <img src="./images/webcafe-logo.png" alt="Web Cafe" />
+        </a>
+      </h1>
+      <ul class="member resetList">
+        <li>
+          <a href="#">로그인</a>
+        </li>
+        <li>
+          <span aria-hidden="true">|</span>
+          <a href="#">회원 가입</a>
+        </li>
+        <li>
+          <span aria-hidden="true">|</span>
+          <a href="#">커뮤니티</a>
+        </li>
+      </ul>
+      <form action="#" class="searchForm" method="POST">
+        <fieldset>
+          <legend>검색 폼</legend>
+          <label for="search" class="a11y-hidden">검색어</label>
+          <input type="search" id="search" name="search" placeholder="검색어를 입력하세요" />
+          <button class="searchButton button">검색</button>
+        </fieldset>
+      </form>
+    </header>
+    <nav class="appNavigation">
+      <h2 class="a11y-hidden">메인 메뉴</h2>
+      <button type="button" class="menu-btn" aria-label="메뉴열기">
+        <span class="btn-top"></span>
+        <span class="btn-middle"></span>
+        <span class="btn-bottom"></span>
+      </button>
+      <ul class="menu-list">
+        <li class="menu-title">
+          <a href="#">HTML에 대해</a>
+          <ul class="submenu">
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+          </ul>
+        </li>
+        <li class="menu-title">
+          <a href="#">CSS에 대해</a>
+          <ul class="submenu">
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+          </ul>
+        </li>
+        <li class="menu-title">
+          <a href="#">웹표준/웹접근성</a>
+          <ul class="submenu">
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+          </ul>
+        </li>
+        <li class="menu-title">
+          <a href="#">묻고 답하기</a>
+          <ul class="submenu">
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+          </ul>
+        </li>
+        <li class="menu-title">
+          <a href="#">자료실</a>
+          <ul class="submenu">
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+            <li><a href="#">HTML5 소개</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main class="appMain">
+      <section class="book">추천 서적</section>
+      <section class="news">새소식</section>
+      <section class="board">게시판</section>
+      <section class="favorite">인기 사이트</section>
+      <article class="twitter">트위터</article>
+    </main>
+    <footer class="appFooter">푸터</footer>
+  </div>
+</body>
+
+</html>

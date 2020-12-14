@@ -1,0 +1,167 @@
+body {
+  background-color: pink;
+  font-size: 1.4rem;
+  position: relative;
+}
+
+/* 방법1-1 flex column 활용하여 배치하기 */
+/* .container {
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  position: absolute;
+}
+
+.appHeader,
+.appMain,
+.appFooter {
+  padding: 0 20px;
+}
+
+.appNavigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+/* 방법1-2 flex row 활용하여 배치하기 */
+/* .appHeader,
+.appMain,
+.appFooter {
+  width: 100%;
+}
+
+.appNavigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70vw;
+  height: 100vh;
+  transform: translate(-100%);
+}
+
+.appMain {
+  min-height: 70vh;
+}
+
+.book,
+.news,
+.board,
+.favorite,
+.twitter {
+  width: 100%;
+} */
+
+.container {
+  position: relative;
+}
+
+.appNavigation {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-left: -70%;
+  width: 70%;
+  height: 100%;
+}
+
+/* .appNavigation vw/vh 쓰지 않는 이유 */
+
+/* 헤더 */
+
+.appHeader {
+  display: flex;
+  flex-flow: row wrap;
+  background: #38302e;
+  padding-bottom: 1em;
+}
+
+.brand,
+.memberOnly,
+.searchForm {
+  width: 100%;
+  padding: 0 20px;
+}
+
+
+.memberOnly {
+  order: -1;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(152, 133, 116);
+  color: white;
+}
+
+.memberOnly a {
+  color: white;
+}
+
+input[name="search"] {
+  width: calc(100% - 45px);
+}
+
+.buttonSearch {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0;
+  font-size: 0.8em;
+  position: relative;
+  border: 0;
+  background-color: transparent;
+  vertical-align: middle;
+}
+
+.buttonSearch::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../images/btn_search.png');
+  background-size: cover;
+}
+
+/* 
+.brand {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+}
+
+.memberOnly {
+  display: flex;
+  justify-content: flex-end;
+  background: brown;
+  color: white;
+  padding: 10px 10px;
+}
+
+.memberOnly a {
+  color: white;
+  padding-right: 15px;
+  padding-left: 10px;
+}
+
+.searchForm fieldset {
+  margin-top: 100px;
+}
+
+.searchForm input {
+  line-height: 2;
+  margin-left: 20px;
+  width: 70%;
+}
+
+.buttonSearch {
+  text-indent: -999px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  background-image: url('../images/btn_search.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+} */

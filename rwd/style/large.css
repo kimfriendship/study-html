@@ -1,0 +1,161 @@
+body {
+  background-color: skyblue;
+  font-size: 1.6rem;
+}
+
+/* 방법1. flex 활용하기 */
+/* .container {
+  justify-content: center;
+}
+
+.appHeader,
+.appMain {
+  width: 1000px;
+}
+
+.appNavigation,
+.appFooter {
+  width: 100%;
+}
+
+.appMain {
+  justify-content: space-between;
+}
+
+.book {
+  width: 320px;
+}
+
+.news {
+  width: 660px;
+}
+
+.board {
+  width: 320px;
+}
+
+.favorite {
+  width: 220px;
+  order: 1;
+}
+
+.twitter {
+  width: 420px;
+} */
+/* 방법2. float 활용 방법 */
+.appHeader,
+.appMain {
+  margin: 0 auto;
+}
+
+.appHeader {
+  width: 1000px;
+}
+
+.appMain {
+  width: 1020px;
+}
+
+.appMain::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.book,
+.news,
+.board,
+.favorite,
+.twitter {
+  float: left;
+  margin: 0 10px;
+}
+
+.book {
+  width: 320px;
+}
+
+.news {
+  width: 660px;
+}
+
+.board {
+  width: 320px;
+}
+
+.favorite {
+  width: 220px;
+  float: right;
+}
+
+.twitter {
+  width: 420px;
+  float: right;
+}
+
+/* 헤더 */
+/* grid 활용하기 */
+/* .appHeader {
+  height: 85px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "brand member"
+    "brand search";
+}
+
+.brand {
+  background: lime;
+  grid-area: brand;
+}
+
+.memberOnly {
+  display: flex;
+  justify-content: flex-end;
+  background: pink;
+  grid-area: member;
+}
+
+.searchForm {
+  background: gold;
+  grid-area: search;
+} */
+
+/* flex 활용하기 */
+
+.appHeader {
+  height: 85px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.brand {
+  margin: 0;
+  justify-content: center;
+}
+
+.brand img {
+  display: block;
+}
+
+.memberOnly a {
+  color: black;
+}
+
+.searchForm {
+  text-align: right;
+}
+
+input[name="search"] {
+  width: 400px;
+}
+
+.buttonSearch {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #988574;
+  color: #fff;
+  height: 35px;
+}
